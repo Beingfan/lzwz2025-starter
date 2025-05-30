@@ -15,7 +15,7 @@ function handlerClick() {
   fbq('track', 'ViewContent');
   fbq('track', 'CompleteRegistration');
   fbq('track', 'Lead');
-  window.open("https://lihi3.cc/Yt2eB");
+  window.open("https://t.me/meta_lott_bot?start=18110911");
 }
 buttons.forEach((v) => {
   v.onclick = handlerClick;
