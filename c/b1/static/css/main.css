@@ -288,7 +288,7 @@ header.fixed .header-content {
 }
 
 section {
-	padding: 100px 0px;
+	padding: 50px 0px;
 	overflow: hidden
 }
 
@@ -783,7 +783,7 @@ section .section-list-title {
 #end .text-content a {
 	display: inline-block;
 	font-family: "Raleway",Sans-serif;
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: 600;
 	letter-spacing: -0.3px;
 	fill: #020710;
