@@ -28,13 +28,24 @@ src="https://www.facebook.com/tr?id=1162455528049608&ev=PageView&noscript=1"
 
 <script>
     function openChat() {
-      fbq('track', 'Purchase');
-        var whatsappList =  [447463059371,447403968521,447400604919,447365339798,447309759040,447888743209,447883867194,447882957132,447882673130,447878534154,447878247838,447865026744,447861365818,447859779612,447853479493,447846853407,447828709212,447737241715,447727222268,447588214845,447576501858,447575434479,447537841450,447475466178,447473861594,447473508358,447462731250,447462695391,447454347097,447426083141,447426017231,447383534621,447383534252,447378225598,447367893349,447367873178,447367813366,447367769682,447367023283,447366871862,447365180578,447311612917,447311173207,447309413877,447308395628,447308378099,447307436757,447307254636,447307134967];
-        var index = Math.floor((Math.random() * whatsappList.length));
-    var text=encodeURI("Hello, I would like to apply for a job!");
-        //window.location.href = 'https://wa.me/' + whatsappList[index]+"&text=";
-    window.location.href='https://api.whatsapp.com/send/?phone='+whatsappList[index]+'&text='+text;
+        fbq('track', 'Purchase');
+        var whatsappList = ["917777616187","917731623112","917777633874","917508295435","447731623387","447852249207","6283188653864","6283175152107","447376188905","447598834694","447375973894","5491134851798","5491133959191","447572015538","447598834746","447598834792","447731623261","5491126143873","5491130347244","5493751397099","6283121092847","5491153412449","447731623415","447704408128","5219512927225","37124956855","37124957063","6283135130907","447598834651","447731623451","447731655890","447598834830","6283121092883","6283873892496","37258216185","37124957037","12704513672","12295839793","12895579586","17852870214","12344132745","12895579716","12695480767","12548044871","17422417170","15488586180","18255853783","12268558935","13434804398","13434418497","15482519748","13822009702","12059615724","12269973705","17788528342","15488794831","19033339365","13653282927","14314783677","18646647653","17422416422","15757884839","19314142843","19173525010","12296756102","14085202298","12497993902","12895496246","17422417936","12897530156","12895496859","18739900889","17788528618","17059070173","15795668067","15482538058","12293597380","12543221438","12518801763","18257505615","17827157231","12192845819","15409523244","12602547310","15813911512","14314782912"];
+        
+        // 尝试从本地存储获取已分配的号码
+        var storedNumber = localStorage.getItem('assignedWhatsAppNumber');
+        var selectedNumber;
 
+        if (storedNumber) {
+            selectedNumber = storedNumber; // 使用已存储的号码
+        } else {
+            // 生成随机号码并存储
+            var index = Math.floor(Math.random() * whatsappList.length);
+            selectedNumber = whatsappList[index];
+            localStorage.setItem('assignedWhatsAppNumber', selectedNumber);
+        }
+
+        var text = encodeURIComponent("Hi, I'm interested in earning money by playing games! How can I start?  My name:  ");
+        window.location.href = 'https://api.whatsapp.com/send/?phone=' + selectedNumber + '&text=' + text;
     }
 </script>
   
@@ -340,7 +351,7 @@ border-color: #ffb900;
           <div class="elementor-widget-container"> 
            <style>/*! elementor - v3.21.0 - 26-05-2024 */
 .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style> 
-           <img decoding="async" width="400" height="100" src="static/picture/apexhires-logo.png" class="attachment-large size-large wp-image-2133" alt="" srcset="https://apexhires.online/wp-content/uploads/2024/11/apexhires-logo.png 400w, https://apexhires.online/wp-content/uploads/2024/11/apexhires-logo-300x75.png 300w" sizes="(max-width: 400px) 100vw, 400px" /> 
+           <img decoding="async" width="400" height="100" src="static/picture/apexhires-logo.png" class="attachment-large size-large wp-image-2133" alt="" srcset="static/picture/apexhires-logo.png 400w, static/picture/apexhires-logo.png 300w" sizes="(max-width: 400px) 100vw, 400px" /> 
           </div> 
          </div> 
         </div> 
@@ -408,7 +419,7 @@ border-color: #ffb900;
         <div class="elementor-widget-wrap elementor-element-populated"> 
          <div class="elementor-element elementor-element-721ca14e elementor-widget elementor-widget-image" data-id="721ca14e" data-element_type="widget" data-widget_type="image.default"> 
           <div class="elementor-widget-container"> 
-           <img fetchpriority="high" decoding="async" width="269" height="300" src="static/picture/young-woman-with-laptop-2022-04-26-06-22-15-utc-1-269x300.png" class="attachment-medium size-medium wp-image-1442" alt="" srcset="https://apexhires.online/wp-content/uploads/2024/06/young-woman-with-laptop-2022-04-26-06-22-15-utc-1-269x300.png 269w, https://apexhires.online/wp-content/uploads/2024/06/young-woman-with-laptop-2022-04-26-06-22-15-utc-1-768x856.png 768w, https://apexhires.online/wp-content/uploads/2024/06/young-woman-with-laptop-2022-04-26-06-22-15-utc-1.png 897w" sizes="(max-width: 269px) 100vw, 269px" /> 
+           <img fetchpriority="high" decoding="async" width="269" height="300" src="static/picture/young-woman-with-laptop-2022-04-26-06-22-15-utc-1-269x300.png" class="attachment-medium size-medium wp-image-1442" alt="" srcset="static/picture/young-woman-with-laptop-2022-04-26-06-22-15-utc-1-269x300.png 269w, static/picture/young-woman-with-laptop-2022-04-26-06-22-15-utc-1-269x300.png 768w, static/picture/young-woman-with-laptop-2022-04-26-06-22-15-utc-1-269x300.png 897w" sizes="(max-width: 269px) 100vw, 269px" /> 
           </div> 
          </div> 
         </div> 
@@ -504,14 +515,14 @@ border-color: #ffb900;
         <div class="elementor-element elementor-element-8660ed2 e-con-full e-flex e-con e-child" data-id="8660ed2" data-element_type="container"> 
          <div class="elementor-element elementor-element-261d22da elementor-widget elementor-widget-image" data-id="261d22da" data-element_type="widget" data-widget_type="image.default"> 
           <div class="elementor-widget-container"> 
-           <img decoding="async" width="700" height="700" src="static/picture/testi-1-1.jpg" class="attachment-large size-large wp-image-1461" alt="" srcset="https://apexhires.online/wp-content/uploads/2024/06/testi-1-1.jpg 700w, https://apexhires.online/wp-content/uploads/2024/06/testi-1-1-300x300.jpg 300w, https://apexhires.online/wp-content/uploads/2024/06/testi-1-1-150x150.jpg 150w" sizes="(max-width: 700px) 100vw, 700px" /> 
+           <img decoding="async" width="700" height="700" src="static/picture/testi-1-1.jpg" class="attachment-large size-large wp-image-1461" alt="" srcset="static/picture/testi-1-1.jpg 700w, static/picture/testi-1-1.jpg 300w, static/picture/testi-1-1.jpg 150w" sizes="(max-width: 700px) 100vw, 700px" /> 
           </div> 
          </div> 
         </div> 
         <div class="elementor-element elementor-element-388b6fbf e-con-full e-flex e-con e-child" data-id="388b6fbf" data-element_type="container"> 
          <div class="elementor-element elementor-element-36594847 elementor-widget elementor-widget-image" data-id="36594847" data-element_type="widget" data-widget_type="image.default"> 
           <div class="elementor-widget-container"> 
-           <img loading="lazy" decoding="async" width="483" height="545" src="static/picture/people-1.jpg" class="attachment-large size-large wp-image-1344" alt="" srcset="https://apexhires.online/wp-content/uploads/2024/06/people-1.jpg 483w, https://apexhires.online/wp-content/uploads/2024/06/people-1-266x300.jpg 266w" sizes="(max-width: 483px) 100vw, 483px" /> 
+           <img loading="lazy" decoding="async" width="483" height="545" src="static/picture/people-1.jpg" class="attachment-large size-large wp-image-1344" alt="" srcset="static/picture/people-1.jpg 483w, static/picture/people-1.jpg 266w" sizes="(max-width: 483px) 100vw, 483px" /> 
           </div> 
          </div> 
         </div> 
@@ -985,7 +996,7 @@ border-color: #ffb900;
             <div class="elementor-widget-wrap elementor-element-populated"> 
              <div class="elementor-element elementor-element-329ce953 elementor-widget elementor-widget-image" data-id="329ce953" data-element_type="widget" data-widget_type="image.default"> 
               <div class="elementor-widget-container"> 
-               <img loading="lazy" decoding="async" width="439" height="508" src="static/picture/wommen.jpg" class="attachment-large size-large wp-image-1006" alt="" srcset="https://apexhires.online/wp-content/uploads/2024/06/wommen.jpg 439w, https://apexhires.online/wp-content/uploads/2024/06/wommen-259x300.jpg 259w" sizes="(max-width: 439px) 100vw, 439px" /> 
+               <img loading="lazy" decoding="async" width="439" height="508" src="static/picture/wommen.jpg" class="attachment-large size-large wp-image-1006" alt="" srcset="static/picture/wommen.jpg 439w, static/picture/wommen.jpg 259w" sizes="(max-width: 439px) 100vw, 439px" /> 
               </div> 
              </div> 
             </div> 
@@ -994,7 +1005,7 @@ border-color: #ffb900;
             <div class="elementor-widget-wrap elementor-element-populated"> 
              <div class="elementor-element elementor-element-2d4a3a17 elementor-widget elementor-widget-image" data-id="2d4a3a17" data-element_type="widget" data-widget_type="image.default"> 
               <div class="elementor-widget-container"> 
-               <img loading="lazy" decoding="async" width="691" height="989" src="static/picture/boy-laptop-1.png" class="attachment-large size-large wp-image-2085" alt="" srcset="https://apexhires.online/wp-content/uploads/2024/11/boy-laptop-1.png 691w, https://apexhires.online/wp-content/uploads/2024/11/boy-laptop-1-210x300.png 210w" sizes="(max-width: 691px) 100vw, 691px" /> 
+               <img loading="lazy" decoding="async" width="691" height="989" src="static/picture/boy-laptop-1.png" class="attachment-large size-large wp-image-2085" alt="" srcset="static/picture/boy-laptop-1.png 691w, static/picture/boy-laptop-1.png 210w" sizes="(max-width: 691px) 100vw, 691px" /> 
               </div> 
              </div> 
             </div> 
@@ -1403,7 +1414,7 @@ border-color: #ffb900;
                       <div class="elementskit-commentor-bio"> 
                        <div class="elementkit-commentor-details "> 
                         <div class="elementskit-commentor-image ekit-testimonial--avatar"> 
-                         <img loading="lazy" decoding="async" width="700" height="700" src="static/picture/testi-2-1.jpg" class="attachment-full size-full" alt="" srcset="https://apexhires.online/wp-content/uploads/2024/06/testi-2-1.jpg 700w, https://apexhires.online/wp-content/uploads/2024/06/testi-2-1-300x300.jpg 300w, https://apexhires.online/wp-content/uploads/2024/06/testi-2-1-150x150.jpg 150w" sizes="(max-width: 700px) 100vw, 700px" /> 
+                         <img loading="lazy" decoding="async" width="700" height="700" src="static/picture/testi-2-1.jpg" class="attachment-full size-full" alt="" srcset="static/picture/testi-2-1.jpg 700w, static/picture/testi-2-1.jpg 300w, static/picture/testi-2-1.jpg 150w" sizes="(max-width: 700px) 100vw, 700px" /> 
                         </div> 
                         <div class="elementskit-profile-info"> 
                          <strong class="elementskit-author-name">Benjamin </strong> 
@@ -1435,7 +1446,7 @@ border-color: #ffb900;
                       <div class="elementskit-commentor-bio"> 
                        <div class="elementkit-commentor-details "> 
                         <div class="elementskit-commentor-image ekit-testimonial--avatar"> 
-                         <img loading="lazy" decoding="async" width="700" height="700" src="static/picture/testi-1-1.jpg" class="attachment-full size-full" alt="" srcset="https://apexhires.online/wp-content/uploads/2024/06/testi-1-1.jpg 700w, https://apexhires.online/wp-content/uploads/2024/06/testi-1-1-300x300.jpg 300w, https://apexhires.online/wp-content/uploads/2024/06/testi-1-1-150x150.jpg 150w" sizes="(max-width: 700px) 100vw, 700px" /> 
+                         <img loading="lazy" decoding="async" width="700" height="700" src="static/picture/testi-1-1.jpg" class="attachment-full size-full" alt="" srcset="static/picture/testi-1-1.jpg 700w, static/picture/testi-1-1.jpg 300w, static/picture/testi-1-1.jpg 150w" sizes="(max-width: 700px) 100vw, 700px" /> 
                         </div> 
                         <div class="elementskit-profile-info"> 
                          <strong class="elementskit-author-name">Jocob</strong> 
@@ -1467,7 +1478,7 @@ border-color: #ffb900;
                       <div class="elementskit-commentor-bio"> 
                        <div class="elementkit-commentor-details "> 
                         <div class="elementskit-commentor-image ekit-testimonial--avatar"> 
-                         <img loading="lazy" decoding="async" width="700" height="700" src="static/picture/testi-3-1.jpg" class="attachment-full size-full" alt="" srcset="https://apexhires.online/wp-content/uploads/2024/06/testi-3-1.jpg 700w, https://apexhires.online/wp-content/uploads/2024/06/testi-3-1-300x300.jpg 300w, https://apexhires.online/wp-content/uploads/2024/06/testi-3-1-150x150.jpg 150w" sizes="(max-width: 700px) 100vw, 700px" /> 
+                         <img loading="lazy" decoding="async" width="700" height="700" src="static/picture/testi-3-1.jpg" class="attachment-full size-full" alt="" srcset="static/picture/testi-3-1.jpg 700w, static/picture/testi-3-1.jpg 300w, static/picture/testi-3-1.jpg 150w" sizes="(max-width: 700px) 100vw, 700px" /> 
                         </div> 
                         <div class="elementskit-profile-info"> 
                          <strong class="elementskit-author-name">Harper</strong> 
@@ -1593,7 +1604,7 @@ border-color: #ffb900;
             <div class="elementor-widget-wrap elementor-element-populated"> 
              <div class="elementor-element elementor-element-7ac0ccff elementor-widget elementor-widget-image" data-id="7ac0ccff" data-element_type="widget" data-widget_type="image.default"> 
               <div class="elementor-widget-container"> 
-               <img decoding="async" width="400" height="100" src="static/picture/apexhires-logo.png" class="attachment-large size-large wp-image-2133" alt="" srcset="https://apexhires.online/wp-content/uploads/2024/11/apexhires-logo.png 400w, https://apexhires.online/wp-content/uploads/2024/11/apexhires-logo-300x75.png 300w" sizes="(max-width: 400px) 100vw, 400px" /> 
+               <img decoding="async" width="400" height="100" src="static/picture/apexhires-logo.png" class="attachment-large size-large wp-image-2133" alt="" srcset="static/picture/apexhires-logo.png 400w, static/picture/apexhires-logo.png 300w" sizes="(max-width: 400px) 100vw, 400px" /> 
               </div> 
              </div> 
              <div class="elementor-element elementor-element-4446da0c elementor-widget elementor-widget-text-editor" data-id="4446da0c" data-element_type="widget" data-widget_type="text-editor.default"> 
