@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1162455528049608');
+fbq('init', '1362087818307209');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1162455528049608&ev=PageView&noscript=1"
+/><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1362087818307209&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!--   <script>
+      function onShoppingLink(){
+          fbq('track', 'Contact');
+          window.open('https://chat.whatsapp.com/LCaIsb6r8XxGG2I5fcp01I')
+      }
+  </script> -->
+
+<script>
+    function openChat() {
+        fbq('track', 'Purchase');
+        var whatsappList = ["447367181602","447380316233","447387469026","447393100956","447413506219","447377982229","918001182452","918350013519","918331840429","917970690014","917807476448","917795812015","917751008307","917681893768","919030364262","919010885826","919009580435","919008803657","918972010439","917396704810","917377300386","917339640748","918939479743","918884795326","918884523068","918695388283","918695043383","918597230986","918521158814","918501840884"];
+        
+        // 尝试从本地存储获取已分配的号码
+        var storedNumber = localStorage.getItem('assignedWhatsAppNumber');
+        var selectedNumber;
+
+        if (storedNumber) {
+            selectedNumber = storedNumber; // 使用已存储的号码
+        } else {
+            // 生成随机号码并存储
+            var index = Math.floor(Math.random() * whatsappList.length);
+            selectedNumber = whatsappList[index];
+            localStorage.setItem('assignedWhatsAppNumber', selectedNumber);
+        }
+
+        var text = encodeURIComponent("Hi, I'm interested in earning money! How can I start?  ");
+        window.location.href = 'https://api.whatsapp.com/send/?phone=' + selectedNumber + '&text=' + text;
+    }
+</script>
+    
+<!-- End Meta Pixel Code -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N6GPBPK');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6GPBPK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetMaxx - Transform Your Income Like These Real People Did</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .logo-img {
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .hero-text {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .testimonial {
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .testimonial-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        .testimonial-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            padding: 20px;
+        }
+        .testimonial-image img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .quote {
+            font-style: italic;
+            font-size: 22px;
+            border-left: 5px solid #3498db;
+            padding-left: 20px;
+            margin: 25px 0;
+            color: #2c3e50;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 5px solid #3498db;
+        }
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 35px 0;
+        }
+        .benefit-item {
+                color: #000;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .benefit-icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+        .section-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            align-self: center;
+        }
+        .section-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 50px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .cta-button:hover {
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+        .guarantee {
+            background-color: #2ecc71;
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 50px 0;
+            text-align: center;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            border-radius: 15px 15px 0 0;
+            margin-top: 60px;
+        }
+        .profile-card {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            background: rgba(52, 152, 219, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .profile-icon {
+            font-size: 50px;
+            margin-right: 25px;
+            min-width: 60px;
+            text-align: center;
+        }
+        .profile-info {
+            text-align: left;
+        }
+        .profile-info h3 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        .profile-info p {
+            color: #7f8c8d;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .comparison-table td:first-child {
+            font-weight: bold;
+            width: 30%;
+            color: #2c3e50;
+        }
+        ul.feature-list {
+            list-style-type: none;
+            margin: 30px 0;
+        }
+        ul.feature-list li {
+            padding: 12px 0;
+            position: relative;
+            padding-left: 40px;
+            font-size: 18px;
+        }
+        ul.feature-list li:before {
+            content: "✓";
+            color: #2ecc71;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .stat-item {
+            background-color: white;
+            color: #000;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        .success-path {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        .path-item {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .path-item:not(:last-child):after {
+            content: "→";
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #3498db;
+        }
+        .path-number {
+            background-color: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .benefits, .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-button, .section-button {
+                display: block;
+                margin: 20px auto;
+            }
+            .testimonial {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+            .testimonial-image {
+                order: -1;
+            }
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            .path-item {
+                flex: 100%;
+                margin-bottom: 30px;
+            }
+            .path-item:after {
+                display: none;
+            }
+            .hero-text {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo placeholder -->
+            <!-- <div class="logo-img">[YOUR LOGO HERE]</div> -->
+            <div class="logo">BetMaxx</div>
+            <h1>How Ordinary People Are Earning ₹500-₹1000 Daily</h1>
+            <p class="hero-text">Government workers, laborers, and job seekers share how they transformed their income with our proven system</p>
+            <a href="javascript:openChat()" class="cta-button">Start Earning Today</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Introduction Section -->
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <h2>Three Lives Transformed By One System</h2>
+                <p>Meet Vikram, Rakesh, and Rahul - from completely different backgrounds but all achieving financial freedom through BetMaxx's unique investment platform.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <p>Different backgrounds</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1</div>
+                        <p>Proven system</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">₹1000+</div>
+                        <p>Daily earnings</p>
+                    </div>
+                </div>
+                
+                <p>Despite coming from government jobs, construction work, and unemployment, they all discovered the same truth: <strong>You don't need special skills or connections to earn money - you just need the right system working for you.</strong></p>
+            </div>
+            <div class="testimonial-image">
+                <img src="static/1000.jpg" alt="Three success stories">
+            </div>
+        </div>
+
+        <!-- Government Worker Story -->
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <h2>🏛️ Government Employee's Side Hustle Success</h2>
+                <p class="quote">"I thought being a government employee was stable enough, until I used BetMaxx and started earning twice my monthly salary every day."</p>
+                
+                <div class="profile-card">
+                    <div class="profile-icon">👨‍💼</div>
+                    <div class="profile-info">
+                        <h3>Vikram Singh, 35</h3>
+                        <p>Government worker for 10 years | ₹32,000 monthly salary</p>
+                    </div>
+                </div>
+                
+                <p>After a decade in government service with stable but limited income (₹32,000/month), struggling with mortgage and children's education expenses, Vikram discovered BetMaxx through a trusted colleague.</p>
+                
+                <div class="highlight">
+                    <p>His first reaction was skepticism: "Isn't this gambling?" But his colleague explained:</p>
+                    <p class="quote">"It's different - the platform places bets to make money globally, you just invest funds and wait for profit shares. Guaranteed earnings."</p>
+                </div>
+                
+                <h3>Vikram's Results:</h3>
+                <ul class="feature-list">
+                    <li>Started with ₹1000, received ₹50 next day</li>
+                    <li>Grew investment to ₹10,000 within a month</li>
+                    <li>Now earns ₹500-700 daily (more than his daily salary)</li>
+                    <li>Earned ₹2000+ from referrals alone</li>
+                </ul>
+                
+                <a href="javascript:openChat()" class="section-button">See How Vikram Did It</a>
+            </div>
+            <div class="testimonial-image">
+                <img src="static/1001.jpg" alt="Government employee success">
+            </div>
+        </div>
+
+        <!-- Construction Worker Story -->
+        <div class="testimonial">
+            <div class="testimonial-image">
+                <img src="static/1002.jpg" alt="Construction worker success">
+            </div>
+            <div class="testimonial-content">
+                <h2>🧑‍🔧 From Laborer to ₹1000 Daily</h2>
+                <p class="quote">"I used to carry cement for 12 hours a day earning ₹450. Now my phone earns me ₹1000 daily."</p>
+                
+                <div class="profile-card">
+                    <div class="profile-icon">👷</div>
+                    <div class="profile-info">
+                        <h3>Rakesh, 29</h3>
+                        <p>Former construction worker | From Bihar</p>
+                    </div>
+                </div>
+                
+                <p>After dropping out of school and struggling through various manual jobs, often eating just one meal a day to save money for his mother's medicine, Rakesh discovered BetMaxx.</p>
+                
+                <div class="highlight">
+                    <p>He started with ₹1000 and was shocked when ₹50 appeared the next day. The system worked automatically:</p>
+                    <ul class="feature-list">
+                        <li>No financial knowledge needed</li>
+                        <li>No constant phone monitoring</li>
+                        <li>No recruiting requirements</li>
+                        <li>Daily automatic withdrawals</li>
+                    </ul>
+                </div>
+                
+                <h3>Rakesh's Transformation:</h3>
+                <table class="comparison-table">
+                    <tr>
+                        <td>Before BetMaxx</td>
+                        <td>12-hour days carrying cement for ₹450</td>
+                    </tr>
+                    <tr>
+                        <td>After 15 Days</td>
+                        <td>₹3500 earned, called "teacher" by coworkers</td>
+                    </tr>
+                    <tr>
+                        <td>Now</td>
+                        <td>₹1000+ daily from ₹20,000 investment</td>
+                    </tr>
+                </table>
+                
+                <a href="javascript:openChat()" class="section-button">Learn Rakesh's Strategy</a>
+            </div>
+        </div>
+
+        <!-- Job Seeker Story -->
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <h2>💼 From Jobless to Financial Freedom</h2>
+                <p class="quote">"I thought being unemployed meant no future until BetMaxx restored my dignity with daily earnings."</p>
+                
+                <div class="profile-card">
+                    <div class="profile-icon">🎓</div>
+                    <div class="profile-info">
+                        <h3>Rahul Kumar</h3>
+                        <p>College graduate | Formerly earning ₹300/day</p>
+                    </div>
+                </div>
+                
+                <p>After graduating and facing constant job rejections, Rahul survived on odd jobs until discovering BetMaxx's investment strategy.</p>
+                
+                <div class="highlight">
+                    <h3>What is This Strategy?</h3>
+                    <p>The platform uses invested funds to place strategic bets with stable odds. If the first bet loses, the second doubles, and so on until a win recovers all losses plus profit.</p>
+                    <p class="quote">"It's not gambling - it's mathematical strategy executed by professionals who share profits with me."</p>
+                </div>
+                
+                <h3>Rahul's Journey:</h3>
+                <div class="success-path">
+                    <div class="path-item">
+                        <div class="path-number">1</div>
+                        <p>Started with ₹1000</p>
+                        <p>₹50 first dividend</p>
+                    </div>
+                    <div class="path-item">
+                        <div class="path-number">2</div>
+                        <p>Reinvested profits</p>
+                        <p>Added referrals</p>
+                    </div>
+                    <div class="path-item">
+                        <div class="path-number">3</div>
+                        <p>Now earns ₹500-1000 daily</p>
+                        <p>+ ₹2000 from referrals</p>
+                    </div>
+                </div>
+                
+                <a href="javascript:openChat()" class="section-button">Understand Rahul's Method</a>
+            </div>
+            <div class="testimonial-image">
+                <img src="static/1003.jpg" alt="Job seeker success">
+            </div>
+        </div>
+
+        <!-- Combined Proof Section -->
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <h2>📊 The Common Thread In All Success Stories</h2>
+                
+                <div class="benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🔍</div>
+                        <h3>Initial Skepticism</h3>
+                        <p>All three initially doubted if it was gambling</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💡</div>
+                        <h3>Small Test Investment</h3>
+                        <p>Started with just ₹1000</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💰</div>
+                        <h3>Immediate Results</h3>
+                        <p>₹50 first dividend within 24 hours</p>
+                    </div>
+                </div>
+                
+                <h3>Their Shared Winning Strategy:</h3>
+                <ul class="feature-list">
+                    <li>Started small with ₹1000 to test the system</li>
+                    <li>Reinvested their profits to grow earnings</li>
+                    <li>Added referrals for bonus income</li>
+                    <li>Trusted the automated system to work for them</li>
+                </ul>
+                
+                <div class="highlight">
+                    <h3>Key Takeaways:</h3>
+                    <table class="comparison-table">
+                        <tr>
+                            <td>Before BetMaxx</td>
+                            <td>Limited income, job struggles, financial stress</td>
+                        </tr>
+                        <tr>
+                            <td>After 15 Days</td>
+                            <td>₹3000+ earned, system proven reliable</td>
+                        </tr>
+                        <tr>
+                            <td>After 30 Days</td>
+                            <td>₹1000+ daily, multiple income streams</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="testimonial">
+            <div class="testimonial-image">
+                <img src="static/1004.jpg" alt="How BetMaxx works">
+            </div>
+            <div class="testimonial-content">
+                <h2>⚙️ How BetMaxx Works For You</h2>
+                <p>The same simple 3-step process that worked for Vikram, Rakesh, and Rahul:</p>
+                
+                <div class="benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">1</div>
+                        <h3>You Invest</h3>
+                        <p>Start with just ₹1000</p>
+                        <p>Minimum commitment</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">2</div>
+                        <h3>System Works</h3>
+                        <p>AI executes proven strategies</p>
+                        <p>24/7 automated</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">3</div>
+                        <h3>You Earn</h3>
+                        <p>Daily dividends</p>
+                        <p>+ Referral bonuses</p>
+                    </div>
+                </div>
+                
+                <div class="highlight">
+                    <h3>Why This Isn't Gambling:</h3>
+                    <ul class="feature-list">
+                        <li>Professional team with historical data and AI analysis</li>
+                        <li>Mathematically proven strategy with risk management</li>
+                        <li>You don't place bets - professionals do it for you</li>
+                        <li>Daily withdrawals prove it's real and sustainable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final CTA Section -->
+        <div class="cta-section">
+            <h2>🚀 Your Turn To Transform Your Income</h2>
+            <p>Government workers, laborers, and job seekers have all succeeded with BetMaxx. Now it's your turn.</p>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">📤</div>
+                    <h3>Invest ₹1000</h3>
+                    <p>Get ₹50 daily</p>
+                    <p>Start small, grow fast</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">👥</div>
+                    <h3>Refer Friends</h3>
+                    <p>Get ₹50 + ₹100 per referral</p>
+                    <p>Multiply your income</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💸</div>
+                    <h3>Withdraw Daily</h3>
+                    <p>No lock-in periods</p>
+                    <p>Your money stays liquid</p>
+                </div>
+            </div>
+            
+            <p><strong>Choose your starting point:</strong></p>
+            <a href="javascript:openChat()" class="cta-button">Start With ₹1000 Now</a>
+            <a href="javascript:openChat()" class="cta-button">Get Personal Guidance</a>
+        </div>
+
+        <!-- Platform Guarantees -->
+        <div class="guarantee">
+            <h2>🔒 BetMaxx Platform Guarantees</h2>
+            <p>Trusted by over 2 million users worldwide with:</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">13+</div>
+                    <p>Years in operation since 2010</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">47</div>
+                    <p>Countries where we operate</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">AI</div>
+                    <p>Powered investment strategies</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">UPI</div>
+                    <p>Instant withdrawals in India</p>
+                </div>
+            </div>
+            
+            <a href="javascript:openChat()" class="section-button" style="background-color: white; color: #2ecc71; margin-top: 30px;">Verify Our Credentials</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 BetMaxx. All rights reserved.</p>
+            <p>Contact us: support@betmaxx.com | +91 83500 13519</p>
+            <p>WhatsApp: <a href="javascript:openChat()" style="color: #25D366; font-weight: bold;">Click to Chat Now</a></p>
+            <p style="margin-top: 20px;">Headquarters: Las Vegas, USA | India Support Center: Mumbai</p>
+        </div>
+    </footer>
+</body>
+</html>
