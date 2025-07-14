@@ -10,16 +10,16 @@ const buttons = document.querySelectorAll(".section__button");
 const classArr = ["one", "two", "three"];
 let time = null;
 
-function handlerClick() {
-  fbq("track", "AddToCart");
-  fbq('track', 'ViewContent');
-  fbq('track', 'CompleteRegistration');
-  fbq('track', 'Lead');
-  window.open("https://t.me/meta_lott_bot?start=18110911");
-}
-buttons.forEach((v) => {
-  v.onclick = handlerClick;
-});
+// function handlerClick() {
+//   fbq("track", "AddToCart");
+//   fbq('track', 'ViewContent');
+//   fbq('track', 'CompleteRegistration');
+//   fbq('track', 'Lead');
+//   window.open("https://t.me/meta_lott_bot?start=18110911");
+// }
+// buttons.forEach((v) => {
+//   v.onclick = handlerClick;
+// });
 
 setTimeout(function () {
   model.style.display = "flex";
