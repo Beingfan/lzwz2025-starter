@@ -23,7 +23,7 @@ let time = null;
 
 setTimeout(function () {
   model.style.display = "flex";
-}, 3000);
+}, 90000);
 
 close.onclick = function () {
   model.style.display = "none";
