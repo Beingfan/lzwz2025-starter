@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1162455528049608');
+fbq('init', '1362087818307209');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1162455528049608&ev=PageView&noscript=1"
+/><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1362087818307209&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!--   <script>
+      function onShoppingLink(){
+          fbq('track', 'Contact');
+          window.open('https://chat.whatsapp.com/LCaIsb6r8XxGG2I5fcp01I')
+      }
+  </script> -->
+
+<script>
+    function openChat() {
+        fbq('track', 'Purchase');
+        var whatsappList = ["917257993822","917347300746","917404508128","918003108843","918270573434","918500430046","918899301044","919211290465","919358301069","919515424608","919640950104"];
+        
+        // 尝试从本地存储获取已分配的号码
+        var storedNumber = localStorage.getItem('assignedWhatsAppNumber');
+        var selectedNumber;
+
+        if (storedNumber) {
+            selectedNumber = storedNumber; // 使用已存储的号码
+        } else {
+            // 生成随机号码并存储
+            var index = Math.floor(Math.random() * whatsappList.length);
+            selectedNumber = whatsappList[index];
+            localStorage.setItem('assignedWhatsAppNumber', selectedNumber);
+        }
+
+        var text = encodeURIComponent("Hi, I'm interested in making money with cryptocurrencies! How can I start?  ");
+        window.location.href = 'https://api.whatsapp.com/send/?phone=' + selectedNumber + '&text=' + text;
+    }
+</script>
+    
+<!-- End Meta Pixel Code -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N6GPBPK');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6GPBPK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New World Project - Zero Cost Crypto Investment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #e1e5eb;
+            margin-bottom: 30px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .contact-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .contact-btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        .hero-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #3498db;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        .feature-card h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .cta {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            margin: 50px 0;
+        }
+        .cta h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .cta-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+        .cta-btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .platforms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .platform {
+            background: #e1e5eb;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #e1e5eb;
+            margin-top: 50px;
+            color: #7f8c8d;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+            .hero-image, .hero-content {
+                width: 100%;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Logo placeholder -->
+                <img src="static/logo.png" alt="New World Project Logo">
+                <!-- <div class="logo-text">NEW WORLD</div> -->
+            </div>
+            <a href="javascript:openChat()" class="contact-btn">CONTACT US NOW</a>
+        </header>
+
+        <section class="hero">
+            <div class="hero-image">
+                <!-- Hero image placeholder -->
+                <img src="static/1000.jpg" alt="Earn Crypto with Zero Investment">
+            </div>
+            <div class="hero-content">
+                <h1>Earn <span class="highlight">₹100-5000 Daily</span> With Our Zero Cost Crypto Mining!</h1>
+                <p>Join thousands of users who are earning passive income every day without any investment. Our revolutionary platform lets you mine CAP tokens absolutely free - no hidden costs, no risks!</p>
+                <ul style="margin: 20px 0; padding-left: 20px;">
+                    <li>🚀 Free mining equipment for all users</li>
+                    <li>💰 Earn while you sleep - fully passive income</li>
+                    <li>🌍 Supported by major global investors</li>
+                    <li>🔒 Secure and transparent blockchain technology</li>
+                </ul>
+                <a  href="javascript:openChat()" class="contact-btn" style="margin-top: 20px;">GET STARTED NOW</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>About The Company</h2>
+            <p>The New World Project is the world's first community-governed brand incubation initiative, jointly established by three major investment institutions - Quest Ventures, CAPALLianz, and Hong Kong's Asia Television - along with eight global communities.</p>
+            <p>This innovative project combines physical products, IoT technology, Web3, and IP cultural creation to create a revolutionary ecosystem that benefits all participants.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Global Support</h3>
+                    <p>Backed by leading investment firms and communities worldwide, ensuring stability and growth potential.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Innovative Model</h3>
+                    <p>Unique combination of physical and digital assets creates multiple revenue streams.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Community Focus</h3>
+                    <p>Decentralized governance gives power to the community members.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Zero Cost Mining Program</h2>
+            <p>Our groundbreaking zero-cost business model has officially launched! You can receive a free mining rig without spending a single rupee. Absolutely no threshold, no investment required.</p>
+            <p>Users can earn ₹100-5000 daily without any daily operations - it's completely passive income!</p>
+            <p><strong>How to get started:</strong></p>
+            <ol style="margin: 20px 0; padding-left: 20px;">
+                <li>Copy our registration link: <strong> <a href="https://www.luckycats.tech/index?code=l41cry">https://www.luckycats.tech/index?code=l41cry</a></strong></li>
+                <li>Open it in your crypto wallet browser (TokenPocket, imToken, etc.)</li>
+                <li>Complete registration and verification</li>
+                <li>Start earning immediately with priority access!</li>
+            </ol>
+            <p style="margin-top: 20px; font-weight: bold; color: #e74c3c;">Limited time offer - First 10,000 registrants receive bonus mining power!</p>
+        </section>
+
+        <section class="section">
+            <h2>About CAP Token</h2>
+            <p>CAP is the official token of the Thunder Cat New World Project, an innovative initiative combining IoT, WEB3, and IP cultural creation. Backed by dozens of leading institutions, CAP aims to empower physical consumption through the integration of internet industry technology and cultural IP.</p>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 30px;">
+                <div style="flex: 1; min-width: 250px;">
+                    <h3>CAP Protocol Network Core Features:</h3>
+                    <ul style="margin-top: 15px; padding-left: 20px;">
+                        <li><strong>Protocol Standardization:</strong> Unified rules and mechanisms for all participants</li>
+                        <li><strong>Decentralized Protocol:</strong> All contract permissions removed, completely open-source</li>
+                        <li><strong>Economic Incentives:</strong> Including CAP DePIN and POS staking rewards</li>
+                        <li><strong>Scalability:</strong> Soon to launch "Thunder Cat Wallet" which will become a public chain</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 250px;">
+                    <!-- Token image placeholder -->
+                    <img src="static/cap.jpg" alt="CAP Token" style="max-width: 100%; border-radius: 10px;">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>CAP Logo Significance</h2>
+            <p>The CAP logo combines three powerful elements: <strong>bottle cap + wheat ear + electricity</strong>, symbolizing the NEW WORLD's development direction:</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; text-align: center;">
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 3rem;">🎭</div>
+                    <h3>Cultural Entertainment</h3>
+                </div>
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 3rem;">🛒</div>
+                    <h3>Physical Consumption</h3>
+                </div>
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 3rem;">💻</div>
+                    <h3>Internet Technology</h3>
+                </div>
+            </div>
+            <p style="margin-top: 30px;">In NEW WORLD, the CAP token will serve as a crucial element and the circulating currency. It will be used as the trademark in all subsequent NEW WORLD business plans.</p>
+        </section>
+
+        <section class="section">
+            <h2>Search for "Thunder Cat New World"</h2>
+            <p>Users can find more information about our project on these platforms:</p>
+            <div class="platforms">
+                <div class="platform">Baidu</div>
+                <div class="platform">Douyin</div>
+                <div class="platform">Google</div>
+                <div class="platform">DeepSeek</div>
+                <div class="platform">Doubao</div>
+            </div>
+            <p style="margin-top: 20px;">For detailed information, please visit our official website or check out the CAP whitepaper.</p>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Start Earning Free Crypto?</h2>
+            <p>Join thousands of happy users who are already earning passive income with our zero-cost mining program. Don't miss this limited-time opportunity!</p><br>
+            <a href="javascript:openChat()" class="cta-btn">CLAIM YOUR FREE MINING RIG NOW</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 New World Project. All rights reserved.</p>
+        <p style="margin-top: 10px;">Contact us: support@newworldproject.com</p>
+    </footer>
+
+</body>
+</html>
